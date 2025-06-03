@@ -33,7 +33,7 @@ export default function MeditationGuide() {
         className="relative h-[300px] rounded-3xl overflow-hidden mb-8"
       >
         <Image
-          src="/images/meditation-guide.jpg"
+          src="/OpenMeditation/images/meditation-guide.jpg"
           alt="Meditation guide"
           fill
           className="object-cover"
