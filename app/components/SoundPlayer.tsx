@@ -5,10 +5,10 @@ import { motion } from 'framer-motion'
 import { MusicalNoteIcon, SpeakerWaveIcon, SpeakerXMarkIcon } from '@heroicons/react/24/outline'
 
 const sounds = [
-  { id: 'forest', name: 'Forest Birds', file: '/sounds/forest.mp3' },
-  { id: 'rain', name: 'Gentle Rain', file: '/sounds/rain.mp3' },
-  { id: 'ocean', name: 'Ocean Waves', file: '/sounds/ocean.mp3' },
-  { id: 'bells', name: 'Meditation Bells', file: '/sounds/bells.mp3' },
+  { id: 'forest', name: 'Forest Birds', file: '/OpenMeditation/sounds/forest.mp3' },
+  { id: 'rain', name: 'Gentle Rain', file: '/OpenMeditation/sounds/rain.mp3' },
+  { id: 'ocean', name: 'Ocean Waves', file: '/OpenMeditation/sounds/ocean.mp3' },
+  { id: 'bells', name: 'Meditation Bells', file: '/OpenMeditation/sounds/bells.mp3' },
 ]
 
 export default function SoundPlayer() {
