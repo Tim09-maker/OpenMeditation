@@ -1,3 +1,6 @@
+'use client'
+
+import { Suspense } from 'react'
 import MeditationSession from '../components/MeditationSession'
 import MeditationGuide from '../components/MeditationGuide'
 
@@ -19,7 +22,9 @@ export default function MeditatePage() {
             <MeditationGuide />
           </div>
           <div className="order-1 lg:order-2 sticky top-8">
-            <MeditationSession />
+            <Suspense fallback={<div className="min-h-[400px] flex items-center justify-center">Loading meditation session...</div>}>
+              <MeditationSession />
+            </Suspense>
           </div>
         </div>
       </div>
