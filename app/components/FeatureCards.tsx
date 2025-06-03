@@ -17,10 +17,11 @@ export default function FeatureCards() {
           >
             <div className="relative w-24 h-24 mx-auto mb-4">
               <Image
-                src="/images/guided-meditation.jpg"
+                src="/OpenMeditation/images/guided-meditation.jpg"
                 alt="Guided meditation"
                 fill
                 className="object-cover rounded-full"
+                unoptimized
               />
             </div>
             <PlayIcon className="w-12 h-12 text-primary-500 mx-auto mb-4" />
@@ -34,10 +35,11 @@ export default function FeatureCards() {
           >
             <div className="relative w-24 h-24 mx-auto mb-4">
               <Image
-                src="/images/time-meditation.jpg"
+                src="/OpenMeditation/images/time-meditation.jpg"
                 alt="Time meditation"
                 fill
                 className="object-cover rounded-full"
+                unoptimized
               />
             </div>
             <ClockIcon className="w-12 h-12 text-primary-500 mx-auto mb-4" />
@@ -51,10 +53,11 @@ export default function FeatureCards() {
           >
             <div className="relative w-24 h-24 mx-auto mb-4">
               <Image
-                src="/images/progress-meditation.jpg"
+                src="/OpenMeditation/images/progress-meditation.jpg"
                 alt="Progress tracking"
                 fill
                 className="object-cover rounded-full"
+                unoptimized
               />
             </div>
             <HeartIcon className="w-12 h-12 text-primary-500 mx-auto mb-4" />

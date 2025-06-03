@@ -10,11 +10,12 @@ export default function AnimatedHero() {
     <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/meditation-hero.jpg"
+          src="/OpenMeditation/images/meditation-hero.jpg"
           alt="Peaceful meditation scene"
           fill
           className="object-cover opacity-20"
           priority
+          unoptimized
         />
       </div>
       <div className="container mx-auto px-4 text-center relative z-10">

@@ -33,11 +33,12 @@ export default function MeditationGuide() {
         className="relative h-[300px] rounded-3xl overflow-hidden mb-8"
       >
         <Image
-          src="/images/meditation-guide.jpg"
+          src="/OpenMeditation/images/meditation-guide.jpg"
           alt="Meditation guide"
           fill
           className="object-cover"
           priority
+          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         <div className="absolute bottom-0 left-0 p-8 text-white">
