@@ -40,7 +40,7 @@ export default function AnimatedHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <Link href="/OpenMeditation/guided">
+          <Link href="/guided">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

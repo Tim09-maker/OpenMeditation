@@ -106,7 +106,7 @@ export default function GuidedMeditation() {
 
   const handleStartMeditation = () => {
     if (selectedTheme) {
-      router.push(`/OpenMeditation/meditate?theme=${selectedTheme}&guided=true`)
+      router.push(`/meditate?theme=${selectedTheme}&guided=true`)
     }
   }
 
