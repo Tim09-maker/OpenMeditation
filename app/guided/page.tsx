@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { SparklesIcon, SunIcon, MoonIcon, CloudIcon, HeartIcon } from '@heroicons/react/24/outline'
 import ProtectedRoute from '../components/ProtectedRoute'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const meditationThemes = [
   // Morning & Evening
@@ -96,11 +97,18 @@ const meditationThemes = [
 export default function GuidedMeditation() {
   const [selectedTheme, setSelectedTheme] = useState<string | null>(null)
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+  const router = useRouter()
 
   const categories = Array.from(new Set(meditationThemes.map(theme => theme.category)))
   const filteredThemes = selectedCategory 
     ? meditationThemes.filter(theme => theme.category === selectedCategory)
     : meditationThemes
+
+  const handleStartMeditation = () => {
+    if (selectedTheme) {
+      router.push(`/OpenMeditation/meditate?theme=${selectedTheme}&guided=true`)
+    }
+  }
 
   return (
     <ProtectedRoute>
@@ -186,7 +194,7 @@ export default function GuidedMeditation() {
               className="mt-8 text-center"
             >
               <button
-                onClick={() => window.location.href = `/meditate?theme=${selectedTheme}&guided=true`}
+                onClick={handleStartMeditation}
                 className="px-8 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-colors"
               >
                 Begin Guided Meditation
